@@ -15,11 +15,6 @@ SRC_URI = "file://hello-world-mod.c \
 # Change source directory to workdirectory where hello-world-mod.c is
 S = "${WORKDIR}"
 
-# The inherit of module.bbclass will automatically name module packages with
-# "kernel-module-" prefix as required by the oe-core build environment.
-
-RPROVIDES_${PN} += "kernel-module-hello"
-
 
 
 
